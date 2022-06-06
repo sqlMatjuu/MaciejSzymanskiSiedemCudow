@@ -157,7 +157,7 @@ li.ndmen a.ndmen:hover:not(.ndactive) {
 #floatndmenu {
 	float: left;
 	display: block;
-	height: calc(26px + 93%);
+	height: calc(33px + 93%);
 	background-color: #97A3A6;
 	width: 192px;
 	min-height: calc(20% + 676px);
