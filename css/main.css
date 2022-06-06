@@ -1,0 +1,324 @@
+* {
+	font-family: "Comic Sans MS";
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+table {
+	border: 1px solid black;
+	width: 100%;
+	table-layout: fixed;
+	height: 100%;
+}
+
+td {
+	border: 1px solid black;
+
+}
+.halfcontent {
+	width: 33%;
+	float: left;
+	height: 50%;
+}
+
+.ndhalf {
+	float: right;
+	width: 33%;
+	height: 50%;
+}
+
+.midthing {
+	margin: 0 auto;
+	width: 33%;
+	height: 50%;
+	font-size: 1.4vw;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.stvw {
+	font-size: 1.6vw;
+}
+
+.ndvw {
+	font-size: 1.4vw;
+}
+
+.opis {
+	font-size: 1.5vw;
+}
+
+#header {
+	background-color: #3A575E;
+	height: 20%;
+	width: calc(100%-192px);
+	font-size: 29pt;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-left: 192px;
+	font-style: italic;
+	text-shadow: 2px 2px #323232;
+}
+
+#content {
+	background-color: #CADADE;
+	height: 73%;
+	width: calc(100%-192px);
+	margin-left: 192px;
+	box-sizing: border-box;
+	padding: 25px;
+	min-height: 650px;
+}
+
+#footer {
+	background-color: #3A575E;
+	height: 26px;
+	width: calc(100% - 192px);
+	margin-left: 192px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+/*menu poziome aka pierwsze nieaktywne
+ul.stmen {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #565D5E;
+  top: 0;
+  width: 100%;
+}
+
+li.stmen {
+  float: left;
+}
+
+li.stmen a.stmen {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+	box-sizing: border-box;
+	height: 43px;
+}
+
+li.stmen a.stmen:hover:not(.stactive) {
+  background-color: #464D4E;
+}
+*/
+.active {
+	background-color: #363D3E;
+	color: white;
+}
+
+li.ndmenac a.ndmenac {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+	min-width: 50px;
+	background-color: #363D3E;
+}
+
+/*menu pionowe aka drugie*/
+ul.ndmen {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #97A3A6;
+}
+
+li.ndmen a.ndmen {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+	min-width: 50px;
+}
+
+li.ndmen a.ndmen:hover:not(.ndactive) {
+  background-color: #464D4E;
+  color: white;
+}
+
+#floatndmenu {
+	float: left;
+	display: block;
+	height: calc(26px + 93%);
+	background-color: #97A3A6;
+	width: 192px;
+	min-height: calc(20% + 676px);
+}
+
+.formgreen {
+  color: #3A575E;
+  font-size: 21pt;
+}
+
+.afterformtext {
+  color: #3A575E;
+  text-align: center;
+  font-size: 50px;
+  width: auto;
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #e1e1e1;
+    background-color: #3A575E;
+    padding: 10px;
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #565D5E;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 30px;
+  text-decoration: none;
+  font-size: 17px;
+	height: 43px;
+	box-sizing: border-box;
+}
+
+.topnav a:hover:not(.active) {
+  background-color: #464D4E;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #363D3E;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.galeria {
+  text-align: center;
+  letter-spacing: 15px;
+  line-height: 50px;
+}
+
+.galeria img {
+  transition: 1s;
+}
+
+.galeria img:hover {
+  filter: grayscale(80%);
+  transform: scale(1.05);
+}
+
+.galzdj {
+	width: 20%;
+	height: auto;
+}
+
+.pagezdj {
+	width: 65%;
+	height: auto;
+}
+
+@media screen and (max-width: 600px) {
+	/*responsywne menu*/
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	/*reszta responsywna*/
+	img.galzdj {
+		width: 100px;
+		height: 100px;
+	}
+	#header {
+		font-size: 20pt;
+	}
+	span.stvw {
+		font-size: 4vw;
+	}
+	ol.ndvw {
+		font-size: 3.5vw;
+	}
+	table {
+		font-size: 3vw;
+	}
+	#footer {
+		font-size: 3vw;
+	}
+	div.opis {
+		font-size: 3.5vw;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.topnav a {
+		padding: 8px 20px;
+	}
+
+	.galzdj {
+		width: 150px;
+		height: 150px;
+	}
+	.halfcontent {
+		width: 100%;
+	}
+	.ndhalf {
+		width: 100%;
+		float: left;
+	}
+	.stvw {
+		font-size: 19pt;
+	}
+	.ndvw {
+		font-size: 15pt;
+	}
+	.midthing {
+		display: none;
+	}
+	.pagezdj {
+		display: none;
+	}
+	.opis {
+		font-size: 17pt;
+	}
+}
